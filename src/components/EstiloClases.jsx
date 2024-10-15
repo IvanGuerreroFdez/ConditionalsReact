@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './styles/Estilos.css';
+import '../styles/Estilos.css';
 
 function EstiloClases () {
     const [contador, setContador] = useState(10);
