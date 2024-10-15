@@ -8,6 +8,7 @@ import ListaPersonas from './components/ListaPersona';
 import EstiloSimple from './components/EstiloSimple';
 import EstilosParrafo from './components/EstilosParrafo';
 import EstiloClases from './components/EstiloClases';
+import Semaforo from './components/Semaforo';
 
 function App() {
   
@@ -37,7 +38,8 @@ function App() {
       <h1>EstiloClases</h1>
       <EstiloClases/>
 
-
+      <h1>Ejercicio Semáforo</h1>
+      <Semaforo/>
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
