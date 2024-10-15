@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ListItem from "./ListItem";
 
 function ListaPersonas(){
     const [personas, setPersonas] = useState([
@@ -25,12 +26,8 @@ function ListaPersonas(){
     
     return <div className="contactos">
         {personas.map((persona, index) => {
-            return <div key={index} className="contacto">
-                <p>{persona.nombre} {persona.apellidos}</p>
-                <p>{persona.email}</p>
-                <input type="text" value={persona.nombre} onChange={(e) => modificarNombre(e, index)} />
-                <button onClick={(e) => borrarContacto(index)}>Borrar</button>
-            </div>
+            const data = { persona, index, modificarNombre, borrarContacto };
+            return <ListItem {...data} />
         })}
     </div>
 }
