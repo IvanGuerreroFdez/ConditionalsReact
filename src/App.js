@@ -5,16 +5,39 @@ import CondicionalAnd from './components/CondicionalAnd';
 import CondicionalVariables from './components/CondicionalVariales';
 import CondicionalAutoejecutado from './components/CondicionalAutoejecutado';
 import ListaPersonas from './components/ListaPersona';
+import EstiloSimple from './components/EstiloSimple';
+import EstilosParrafo from './components/EstilosParrafo';
+import EstiloClases from './components/EstiloClases';
 
 function App() {
   
   return (
     <div className="App">
+      <h1>CondicionalTernario</h1>
       <CondicionalTernario/>
+
+      <h1>CondicionalVariables</h1>
       <CondicionalVariables/>
+
+      <h1>CondicionalAnd</h1>
       <CondicionalAnd/>
+
+      <h1>CondicionalAutoejecutado</h1>
       <CondicionalAutoejecutado/>
+
+      <h1>ListaPersonas</h1>
       <ListaPersonas/>
+
+      <h1>EstiloSimple</h1>
+      <EstiloSimple/>
+
+      <h1>EstilosParrafo</h1>
+      <EstilosParrafo/>
+
+      <h1>EstiloClases</h1>
+      <EstiloClases/>
+
+
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
